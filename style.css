@@ -1,0 +1,73 @@
+body {
+margin: 0;
+}
+
+h1 {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#feature {
+    padding-bottom: 400px;
+}
+
+.container {
+    width: 1350px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.name{
+    width: auto;
+}
+
+.name h2{
+   margin: auto;
+    width: auto;
+}
+
+.country {
+    width: 90px;
+}
+
+.country h2
+{
+    margin: auto;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image img{
+    width: 300px;
+    height: 300px;
+}
+
+.ingredient {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.recette {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
+
+#next {
+    width: 80px;
+	height: 40px;
+	margin: 20px;
+
+}
