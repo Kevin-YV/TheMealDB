@@ -15,16 +15,21 @@ const dataMeal = (data) => {
 
   for (let i = 1; i < 20; i++) {
     const ingredient = meal["strIngredient" + i];
-    if (ingredient) {
+    const measure = meal["strMeasure" + i];
+    /* if (ingredient) {
       ingredientsMeals.push(ingredient);
     }
-    const measure = meal["strMeasure" + i];
-    if (measure) measuresMeals.push(measure);
+    if (measure) measuresMeals.push(measure);*/
+    if (measure && ingredient) {
+      ingredientsMeals += `<li>${measure} - ${ingredient}</li>`;
+    } else if (ingredient) {
+      ingredientsMeals += `<li>${ingredient}</li>`;
+    }
   }
   //console.log(ingredientsMeals);
   console.log(measuresMeals);
 
-  const html = `<div class="container">
+  const html = `
     <div class="name">
      <h2>${mealName}</h2>
     </div>
@@ -36,7 +41,7 @@ const dataMeal = (data) => {
             <img src= "${imgMeal}" alt="Pasta">
              <div class="ingredient">
                 <h2>Ingredient</h2>
-                    <p>${ingredientsMeals}${measuresMeals}</p>
+                    <ul>${ingredientsMeals}</ul>
             </div>
         </div>
     </div> 
@@ -47,10 +52,11 @@ const dataMeal = (data) => {
         </p>
    </div>
    <div class="video">
-        <a href=${mealYoutube}>${mealYoutube}</a>
+        <a href=${mealYoutube}>Regardez la vidéo ici</a>
     </div>`;
 
-  mealContainer.insertAdjacentHTML("beforeend", html);
+  //mealContainer.insertAdjacentHTML("afterbegin", html);
+  mealContainer.innerHTML = html;
 };
 
 // variable de stockage pour lancer et faire apparaitre 15 pokemon
@@ -68,8 +74,6 @@ const meal = async () => {
     throw err;
   }
 };
-
-meal();
 
 btn.addEventListener("click", () => {
   meal();
