@@ -5,8 +5,8 @@ body {
 
 h1 {
     text-align: center;
-    margin: 20px 0; 
-    padding: 10px 0;
+    margin: 15px 0; 
+    padding: 5px 0;
 }
 
 p {
@@ -32,9 +32,6 @@ p {
     }
 }
 
-#feature {
-    padding-bottom: 400px;
-}
 
 .container {
     width: 1350px;
@@ -74,12 +71,17 @@ p {
 
 .ingredient {
     text-align: center;
-    padding-left: 260px;
-    width: max-content;
+    height: 100%;
+    padding-left: 280px;
 }
 
 .ingredient h2 {
-    margin: auto;
+    margin: 0;
+}
+
+.ingredient ul {
+    padding: 0;
+    list-style: none;
 }
 
 
