@@ -52,7 +52,7 @@ const dataMeal = (data) => {
         </p>
    </div>
    <div class="video">
-        <a href=${mealYoutube}>Regardez la vidéo ici</a>
+        <a href=${mealYoutube}>Watch the video here</a>
     </div>`;
 
   //mealContainer.insertAdjacentHTML("afterbegin", html);

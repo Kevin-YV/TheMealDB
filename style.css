@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-size: 18px; 
+    background-image: url('Image/Green3\ Step\ Simple\ \ How\ To\ Make\ a\ Food\ Salad\ YouTube\ Thumbnail.png');
+    background-size: cover;
 }
 
 h1 {
@@ -34,9 +36,6 @@ p {
 
 
 .container {
-    width: 1350px;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -72,7 +71,7 @@ p {
 .ingredient {
     text-align: center;
     height: 100%;
-    padding-left: 280px;
+    padding-left: 205px;
 }
 
 .ingredient h2 {
