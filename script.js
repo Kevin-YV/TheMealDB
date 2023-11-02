@@ -11,7 +11,6 @@ const dataMeal = (data) => {
   const mealInstruction = meal.strInstructions;
   const mealYoutube = meal.strYoutube;
   let ingredientsMeals = [];
-  let measuresMeals = [];
 
   for (let i = 1; i < 20; i++) {
     const ingredient = meal["strIngredient" + i];
@@ -27,7 +26,6 @@ const dataMeal = (data) => {
     }
   }
   //console.log(ingredientsMeals);
-  console.log(measuresMeals);
 
   const html = `
     <div class="name">
